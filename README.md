@@ -1,5 +1,5 @@
 
-[![Build Status](https://dev.azure.com/martinetherton63/ons-fe/_apis/build/status/metherton.ons-fe?branchName=build-pipeline)](https://dev.azure.com/martinetherton63/ons-fe/_build/latest?definitionId=6&branchName=build-pipeline)
+[![Build Status](https://dev.azure.com/martinetherton63/ons-fe/_apis/build/status/metherton.ons-fe?branchName=master)](https://dev.azure.com/martinetherton63/ons-fe/_build/latest?definitionId=6&branchName=master)
 
 <p align="center">
   <img width="200" src="https://open-wc.org/hero.png"></img>
