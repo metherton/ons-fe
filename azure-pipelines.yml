@@ -33,3 +33,9 @@ steps:
     command: custom
     verbose: false
     customCommand: 'run build'
+
+- task: Npm@1
+  inputs:
+    command: publish
+    publishRegistry: useFeed
+    publishFeed: ons-fe/metherton_frontend_packages
