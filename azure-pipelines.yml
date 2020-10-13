@@ -34,6 +34,18 @@ steps:
     verbose: false
     customCommand: 'run build'
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)'
+    Contents: |
+      dist/**
+      package.json
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+
 - task: Npm@1
   inputs:
     command: publish

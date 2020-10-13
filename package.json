@@ -60,7 +60,7 @@
     ]
   },
   "name": "ons-fe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Webcomponent ons-fe following open-wc recommendations",
   "author": "ons-fe",
   "license": "MIT",
