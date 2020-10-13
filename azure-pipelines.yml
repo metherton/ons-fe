@@ -42,13 +42,7 @@ steps:
       package.json
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
-- task: PublishBuildArtifacts@1
+- task: ArchiveFiles@2
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'www'
-
-- task: Npm@1
-  inputs:
-    command: publish
-    publishRegistry: useFeed
-    publishFeed: ons-fe/metherton_frontend_packages
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
+    includeRootFolder: false
